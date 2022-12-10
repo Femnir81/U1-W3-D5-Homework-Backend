@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="General.master.cs" Inherits="U1_W3_D5_Homework_Backend.General" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <title></title>
+    <%--<style>
+        .immaginiAuto {
+            width: 200px;
+        }
+    </style>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="mb-5">
+            <div class="divLogo">
+                <asp:Image ID="Logo1" runat="server" ImageUrl="~/Assets/Lego.png" CssClass="Logo"/>
+            </div>
+            <div class="divLink">
+                <button class="bottoneNavbar" type="button">
+                    <asp:HyperLink ID="LinkHome" CssClass="LinkNavbar" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></button>
+                <button class="bottoneNavbar" type="button">
+                    <asp:HyperLink ID="LinkCarrello" CssClass="LinkNavbar" runat="server" NavigateUrl="~/Carrello.aspx">Carrello</asp:HyperLink></button>
+            </div>
+            <div class="divLogo">
+                <asp:Image ID="Logo2" runat="server" ImageUrl="~/Assets/Lego.png" CssClass="Logo"/>
+            </div>
+        </header>
+        <div>
+            <div class="container my-5 jumbotron">
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer class="d-flex justify-content-center align-items-center mt-5">
+            <p class="text-center m-0">Compito powered by Luca</p>
+        </footer>
+    </form>
+</body>
+</html>
